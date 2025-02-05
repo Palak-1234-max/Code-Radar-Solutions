@@ -3,6 +3,6 @@
 int main() {
     int a,b;
     scanf("%d %d",&a,&b);
-    printf(if(a||b>0){printf("True");}else{printf("False");});
+    printf(a||b>0?"True":"False");
     return 0;
 }
