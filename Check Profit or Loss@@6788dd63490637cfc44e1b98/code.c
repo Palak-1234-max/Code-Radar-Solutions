@@ -12,6 +12,6 @@ int main() {
     else if(a>b)
     printf("Loss");
     else if(a=b)
-    printf("No Profit No Loss")
+    printf("No Profit No Loss");
     return 0;
 }
