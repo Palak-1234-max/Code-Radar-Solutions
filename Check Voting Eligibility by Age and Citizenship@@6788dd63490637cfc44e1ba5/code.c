@@ -10,6 +10,6 @@ int main() {
     if(a>=18 && b==1)
     printf("Eligible");
     else
-    ("Not Eligible");
+    printf("Not Eligible");
     return 0;
 }
