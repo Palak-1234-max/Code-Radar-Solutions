@@ -5,7 +5,8 @@ char* welcome() {
 }
 
 int main() {
-    int a,b,sum,sub,mul,div;
+    int a,b,sum,sub,mul;
+    float div;
     char oprator;
     scanf("%d %d %c",&a,&b,&oprator);
     switch(oprator)
