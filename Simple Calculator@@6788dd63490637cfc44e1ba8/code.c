@@ -11,13 +11,17 @@ int main() {
     scanf("%d %d %c",&a,&b,&oprator);
     switch(oprator)
     {
-        case '+': printf("%d",a+b);
+        case '+': sum=a+b; 
+        printf("%d",sum);
         break;
-        case '-': printf("%d",a-b);
+        case '-': sub=a-b;
+        printf("%d",sub);
         break;
-        case '*': printf("%d",a*b);
+        case '*': mul=a*b;
+        printf("%d",mul);
         break;
-        case '/': printf("%f",a/b);
+        case '/': div=a/b;
+        printf("%f",div);
         break;
         default: printf("error");
     }
