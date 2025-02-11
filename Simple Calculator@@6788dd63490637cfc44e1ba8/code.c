@@ -5,15 +5,19 @@ char* welcome() {
 }
 
 int main() {
-    int a,b,c;
-    scanf("%d %d %c",&a,&b,&c);
-    if(c=='+')
-    printf("%d",(a+b));
-    else if(c=='-')
-    printf("%d",(a-b));
-    else if(c=='*')
-    printf("%d",(a*b));
-    else if(c=='/')
-    printf("%d",(a/b));
-    return 0;
+    int a,b,sum,sub,mul,div;
+    char oprator;
+    scanf("%d %d %c",&a,&b,&oprator);
+    switch(oprator)
+    {
+        case '+': a+b;
+        break;
+        case '-': a-b;
+        break;
+        case '*': a*b;
+        break;
+        case '/': a/b;
+        break;
+        default: printf("error");
+    }
 }
