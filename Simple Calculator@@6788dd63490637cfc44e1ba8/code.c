@@ -22,7 +22,7 @@ int main() {
         break;
         case '/': if (b != 0) {  // Prevent division by zero
                 div = a / b;  // Cast to float for correct division
-                printf("%f", div);
+                printf("%d", div);
             } else {
                 printf("error");
             }
