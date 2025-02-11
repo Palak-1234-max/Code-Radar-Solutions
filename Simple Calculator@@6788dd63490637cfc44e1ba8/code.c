@@ -10,13 +10,13 @@ int main() {
     scanf("%d %d %c",&a,&b,&oprator);
     switch(oprator)
     {
-        case '+': a+b;
+        case '+': printf(a+b);
         break;
-        case '-': a-b;
+        case '-': printf(a-b);
         break;
-        case '*': a*b;
+        case '*': printf(a*b);
         break;
-        case '/': a/b;
+        case '/': printf(a/b);
         break;
         default: printf("error");
     }
