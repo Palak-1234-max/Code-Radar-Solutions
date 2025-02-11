@@ -20,9 +20,13 @@ int main() {
         case '*': mul=a*b;
         printf("%d",mul);
         break;
-        case '/': div=a/b;
-        printf("%f",div);
-        break;
+        case '/': if (b != 0) {  // Prevent division by zero
+                div = (float)a / b;  // Cast to float for correct division
+                printf("%f", div);
+            } else {
+                printf("error");
+            }
+            break;
         default: printf("error");
     }
 }
