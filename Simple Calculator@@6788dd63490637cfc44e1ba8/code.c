@@ -21,7 +21,7 @@ int main() {
         printf("%d",mul);
         break;
         case '/': if (b != 0) {  // Prevent division by zero
-                div = a / b;  // Cast to float for correct division
+                div = (float)a / b;  // Cast to float for correct division
                 printf("%d", div);
             } else {
                 printf("error");
