@@ -7,5 +7,5 @@ int main(){
     while(i<=n){
         sum=sum+i;
     }
-    printf("%d",&sum)
+    printf("%d",&sum);
 }
