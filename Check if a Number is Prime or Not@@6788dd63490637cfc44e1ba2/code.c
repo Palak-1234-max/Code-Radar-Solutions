@@ -15,7 +15,7 @@ int main() {
         int isPrime = 1;  // Assume the number is prime initially
 
         // Check divisibility from 2 to the square root of a
-        for (int i = 2; i <= a**2; i++) {
+        for (int i = 2; i <= (a)**2; i++) {
             if (a % i == 0) {
                 isPrime = 0;  // a is divisible by i, so it's not prime
                 break;
