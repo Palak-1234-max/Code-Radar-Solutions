@@ -4,9 +4,11 @@ int main()
 {
     int a;
     scanf("%d",&a);
-    while(a>0)
+    i=0;
+    while(i<a)
     {
-        while(a>0)
+        j=0;
+        while(j<a)
         {
             printf("* ");
             a--;
