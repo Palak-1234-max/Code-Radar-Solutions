@@ -8,10 +8,9 @@ int main()
     {
         while(a>0)
         {
-            printf("* \n");
+            printf("* ");
             a--;
         }
-        a--;
         printf("\n");
     }
     return 0;
