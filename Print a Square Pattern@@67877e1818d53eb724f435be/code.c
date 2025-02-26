@@ -12,7 +12,6 @@ int main()
             a--;
         }
         printf("\n");
-        a++;
     }
     return 0;
 }
