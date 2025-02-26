@@ -9,7 +9,9 @@ int main()
         while(a>0)
         {
             printf("*");
+            a--;
         }
+        a--;
         printf("\n");
     }
     return 0;
