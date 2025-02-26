@@ -11,9 +11,10 @@ int main()
         while(j<a)
         {
             printf("* ");
-            a--;
+            j++;
         }
         printf("\n");
+        i++;
     }
     return 0;
 }
