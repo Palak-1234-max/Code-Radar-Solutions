@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main()
 {
-    int a;
+    int a,i,j;
     scanf("%d",&a);
     i=0;
     while(i<a)
