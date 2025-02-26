@@ -8,7 +8,7 @@ int main()
     {
         while(a>0)
         {
-            printf("*");
+            printf("* \n");
             a--;
         }
         a--;
