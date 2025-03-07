@@ -17,7 +17,7 @@ int main(){
         for(d=1;d<=a;d++){
             printf(" ");
         }
-        for(e=1;e<=n-(i*2)+1;e++){
+        for(e=1;e<=(n-a)*2-1;e++){
             printf("*");
         }
         printf("\n");
