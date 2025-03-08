@@ -7,7 +7,7 @@ int main()
     int a[n];
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
-        if(a[i]<= a[i+1]){
+        if(a[i]<= a[i+1] && a[i-1]<a){
         printf("Sorted");
         }
         else{
