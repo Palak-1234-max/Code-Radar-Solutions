@@ -8,10 +8,11 @@ int main()
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    if(a[i-1]<=a[i]){
+    if(a[i-1]< a[i]){
         printf("Sorted");
     }
     else{
         printf("Not Sorted");
     }
+    return 0;
 }
