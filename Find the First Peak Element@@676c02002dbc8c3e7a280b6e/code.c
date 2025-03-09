@@ -7,16 +7,16 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d\n",&a[i]);
     }
-    int fpeak;
-    for(i=1;i<n+1;i++){
+    int fpeak=-1;
+    for(i=1;i<n;i++){
         if(a[i]>a[i-1] && a[i]>a[i+1]){
             fpeak=a[i];
             printf("%d",fpeak);
             break;
         }
-        else{
-            printf("-1");
-        }
+    }
+    if(fpeak==-1){
+        printf("-1");
     }
     return 0;
 }
