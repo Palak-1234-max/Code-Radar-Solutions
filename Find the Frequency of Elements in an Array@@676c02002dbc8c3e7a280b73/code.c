@@ -16,7 +16,7 @@ int main(){
         }
         
     }
-    for(i=0;i<4;i++)
+    for(i=0;i<3;i++)
     printf("%d %d\n",a[i],freq);
     return 0;
 }
