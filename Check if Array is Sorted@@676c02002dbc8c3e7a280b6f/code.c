@@ -8,17 +8,18 @@ int main()
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    for(i=0;i<9;i++){
-        for(j=i+1;j<10;j++){
-            if(a[i]<=a[j]){
-                printf("Sorted");
-                break;
-            }
-            else{
-                printf("Not Sorted");
-                break;
-            }
+    int isSorted = 1;
+    for(i=0;i<n-1;i++){
+        if(a[i]>a[i+1]){
+            isSorted=0;
+            break;
         }
+    }
+    if (is Sorted == 0){
+        printf("Not Sorted");
+    }
+    else{
+        printf("Sorted");
     }
     return 0;
 }
