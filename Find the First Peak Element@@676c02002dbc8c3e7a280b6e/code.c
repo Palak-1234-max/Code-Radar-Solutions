@@ -8,7 +8,7 @@ int main(){
         scanf("%d\n",&a[i]);
     }
     int fpeak;
-    for(i=0;i<n-1;i++){
+    for(i=0;i<n;i++){
         if(a[i]>a[i-1] && a[i]>a[i+1]){
             fpeak=a[i];
             break;
