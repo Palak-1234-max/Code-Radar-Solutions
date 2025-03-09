@@ -15,7 +15,7 @@ int main()
             break;
         }
     }
-    if (is Sorted == 0){
+    if (isSorted == 0){
         printf("Not Sorted");
     }
     else{
