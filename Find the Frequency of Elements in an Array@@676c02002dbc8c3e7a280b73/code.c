@@ -3,11 +3,10 @@
 int main(){
     int n;
     scanf("%d\n",&n);
-    int a[n];
+    int a[n],i,j;
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    int i,j;
     for(i=0;i<n-1;i++){
         for(j=i+1;j<n;j++){
             int freq=0;
