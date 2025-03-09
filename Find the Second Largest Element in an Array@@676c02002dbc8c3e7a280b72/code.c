@@ -7,7 +7,7 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    int max=a[0],smax=a[0];
+    int max=a[0],smax=-1;
     for(i=0;i<n;i++){
         if(a[i]>max){
             max=a[i];
@@ -16,9 +16,6 @@ int main(){
     for(i=0;i<n;i++){
         if(a[i]>smax && a[i]!=max){
             smax=a[i];
-        }
-        else{
-            smax=-1;
         }
     }
     printf("%d",smax);
