@@ -18,7 +18,6 @@ int main(){
     if(fpeak==-1 && a[i]>a[i-1]){
         fpeak=a[i];
         printf("%d",fpeak);
-        break;
     }
     if(fpeak==-1 && a[i]<a[i-1]){
         printf("-1");
