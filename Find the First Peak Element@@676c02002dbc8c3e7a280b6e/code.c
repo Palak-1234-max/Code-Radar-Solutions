@@ -9,7 +9,7 @@ int main(){
     }
     int fpeak=-1;
     for(i=0;i<n+1;i++){
-        if(a[i]>a[i-1] && a[i]>a[i+1]){
+        if(a[i]>a[i-1] || a[i]>a[i+1]){
             fpeak=a[i];
             printf("%d",fpeak);
             break;
