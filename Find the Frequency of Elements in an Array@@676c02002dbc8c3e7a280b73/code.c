@@ -7,16 +7,17 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    int freq=0;
     for(i=0;i<n;i++){
-        for(j=i+1;j<n;j++){
-            if(a[j]==a[i]){
-                freq++;
+        int freq=1;
+        if(a[i]!=-1){
+            for(j=i+1;j<n;j++){
+                if(a[j]==a[i]){
+                    freq++;
+                    a[j]=-1;
+                }
             }
         }
-        
+        printf("%d %d\n",a[i],freq);
     }
-    for(i=0;i<3;i++)
-    printf("%d %d\n",a[i],freq);
     return 0;
 }
