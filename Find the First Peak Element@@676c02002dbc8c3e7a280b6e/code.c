@@ -19,7 +19,7 @@ int main(){
         fpeak=a[i];
         printf("%d",fpeak);
     }
-    if(fpeak==-1 && a[i]<a[i-1]){
+    else if(fpeak==-1 && a[i]<=a[i-1]){
         printf("-1");
     }
     return 0;
