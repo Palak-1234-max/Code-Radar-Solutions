@@ -14,7 +14,8 @@ int main(){
                 freq++;
             }
         }
-        printf("\n%d %d",a[i],freq);
+        
     }
+    printf("\n%d %d",a[i],freq);
     return 0;
 }
