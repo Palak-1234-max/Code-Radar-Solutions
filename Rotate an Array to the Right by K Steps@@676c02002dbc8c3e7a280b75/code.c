@@ -6,7 +6,7 @@ int main()
     scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++){
-        scanf("%d\n",&a[i]);
+        scanf("%d ",&a[i]);
     }
     scanf("%d",&k);
     k = k%n;
@@ -18,6 +18,6 @@ int main()
         a[i]=temp[i];
     }
     for(i=0;i<n;i++){
-        printf("%d\n",a[i]);
+        printf("%d ",a[i]);
     }
 }
