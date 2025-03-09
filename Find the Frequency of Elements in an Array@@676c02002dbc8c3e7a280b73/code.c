@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main(){
     int n,i,j;
-    scanf("%d",&n);
+    scanf("%d\n",&n);
     int a[i];
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
@@ -13,7 +13,7 @@ int main(){
             if(a[j]==a[i]){
                 freq++;
             }
-            printf("%d %d",a[i],freq);
+            printf("\n%d %d",a[i],freq);
         }
     }
     return 0;
