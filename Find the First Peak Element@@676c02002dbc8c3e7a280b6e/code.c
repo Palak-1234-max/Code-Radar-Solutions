@@ -11,12 +11,12 @@ int main(){
     for(i=1;i<n;i++){
         if(a[i]>a[i-1] && a[i]>a[i+1]){
             fpeak=a[i];
+            printf("%d",fpeak);
             break;
         }
         else{
             printf("-1");
         }
     }
-    printf("%d",fpeak);
     return 0;
 }
