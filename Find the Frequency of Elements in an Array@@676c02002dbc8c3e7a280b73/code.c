@@ -16,8 +16,8 @@ int main(){
                     a[j]=-1;
                 }
             }
-        }
         printf("%d %d\n",a[i],freq);
+        }
     }
     return 0;
 }
