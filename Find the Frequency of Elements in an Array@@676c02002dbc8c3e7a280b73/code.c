@@ -7,10 +7,9 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    int freq;
     for(i=0;i<n-1;i++){
         for(j=i+1;j<n;j++){
-            freq=0;
+            int freq=0;
             if(a[j]==a[i]){
                 freq++;
             }
