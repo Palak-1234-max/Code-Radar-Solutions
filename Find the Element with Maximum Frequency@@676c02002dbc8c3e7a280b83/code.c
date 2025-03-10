@@ -13,7 +13,7 @@ int main(){
         for(j=i+1;j<n;j++){
             if(a[i]==a[j]){
                 count++;
-                temp=a[i];
+                
             }
         }
         if(count>maxCount || (count == maxCount && a[i]<temp)){
