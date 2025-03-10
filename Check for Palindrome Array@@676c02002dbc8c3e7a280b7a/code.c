@@ -11,14 +11,14 @@ int main(){
     for(int i=0;i<n;i++){
         b[i]=a[n-i-1];
     }
-    
+    int flag;
     for(int i=0;i<n;i++){
-        int flag = 0;
+        flag = 0;
         if(a[i]==b[i]){
             flag=1;
         }
     }
-    if(int flag==1){
+    if(flag==1){
         printf("YES");
     }
     else{
