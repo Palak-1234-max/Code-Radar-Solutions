@@ -13,8 +13,8 @@ int main(){
             for(j=2;j<=a[i];j++){
                 if(a[i]%2!=0){
                     count++;
-                    break;
                 }
+                break;
             }
         }
     }
