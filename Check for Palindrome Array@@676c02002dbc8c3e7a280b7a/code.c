@@ -11,13 +11,17 @@ int main(){
     for(int i=0;i<n;i++){
         b[i]=a[n-i-1];
     }
+    flag = 0;
     for(int i=0;i<n;i++){
         if(a[i]==b[i]){
-            printf("YES");
+            flag=1;
         }
-        else{
-            printf("NO");
-        }
+    }
+    if(flag==1){
+        printf("YES");
+    }
+    else{
+        printf("NO");
     }
     return 0;
 }
