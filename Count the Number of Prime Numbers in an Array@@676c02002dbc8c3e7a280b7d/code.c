@@ -10,7 +10,7 @@ int main(){
     int count = 0;
     for(i=0;i<n;i++){
         if(a[i]>=2){
-            for(j=2;j<=a[i]*a[i];j++){
+            for(j=2;j<=a[i];j++){
                 if(a[i]%2!=0){
                     count++;
                 }
