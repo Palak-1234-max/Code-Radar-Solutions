@@ -12,7 +12,7 @@ int main(){
         for(j=i+1;j<n;j++){
             if(a[i]==a[j]){
                 flag=1;
-                temp=a[i];
+                temp=a[j];
                 break;
             }
         }
