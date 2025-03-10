@@ -13,8 +13,8 @@ int main(){
             if(a[i]==a[j]){
                 flag=1;
                 temp=a[i];
-                break;
             }
+            break;
         }
     }
     if(flag==1){
