@@ -18,5 +18,6 @@ int main(){
             smax=a[i];
         }
     }
+    printf("%d",max*smax);
     return 0;
 }
