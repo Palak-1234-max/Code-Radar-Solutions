@@ -9,15 +9,7 @@ int main(){
     }
     int b[n];
     for(int i=0;i<n;i++){
-        b[i]=a[i];
-    }
-    for(int i=0;i<n;i++){
-        for(int j=n-1;j>=0;j--){
-            int temp=a[i];
-            a[i]=a[j];
-            a[j]=temp;
-            i++;
-        }
+        b[i]=a[n-i-1];
     }
     if(a[n]==b[n]){
         printf("YES");
