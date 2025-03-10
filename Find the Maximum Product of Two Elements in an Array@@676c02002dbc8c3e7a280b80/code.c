@@ -10,6 +10,9 @@ int main(){
     }
     int max=a[0],smax=INT_MIN;
     for(i=0;i<n;i++){
+        if(a[i]<0){
+            a[i]=-a[i];
+        }
         if(a[i]>max){
             smax=max;
             max=a[i];
