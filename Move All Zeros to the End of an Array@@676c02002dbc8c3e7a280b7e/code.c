@@ -8,8 +8,12 @@ int main(){
         scanf("%d ",&a[i]);
     }
     for(i=0;i<n;i++){
-        if(a[i]==0){
-            a[n-1]=a[i];
+        for(j=i+1;j<n;j++){
+            if(a[i]==0){
+                int temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
         }
     }
     for(i=0;i<n;i++){
