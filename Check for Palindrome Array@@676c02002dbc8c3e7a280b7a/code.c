@@ -7,7 +7,10 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    int b[n]=a[n];
+    int b[n];
+    for(int i=0;i<n;i++){
+        b[i]=a[i];
+    }
     for(int i=0;i<n;i++){
         for(int j=n-1;j>=0;j--){
             int temp=a[i];
