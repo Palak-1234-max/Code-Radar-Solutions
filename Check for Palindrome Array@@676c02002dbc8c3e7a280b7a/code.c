@@ -11,7 +11,7 @@ int main(){
     for(int i=0;i<n;i++){
         b[i]=a[n-i-1];
     }
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
         if(a[i]==b[i]){
             printf("YES");
         }
