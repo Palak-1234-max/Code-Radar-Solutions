@@ -8,16 +8,16 @@ int main(){
         scanf("%d ",&a[i]);
     }
     scanf("\n%d",&k);
+    int flag=0;
     for(i=0;i<n;i++){
         if(a[i]==k){
             printf("%d",i);
-            break;
-        }
-        else if(a[i]!=k){
-            printf("-1");
+            flag=1;
             break;
         }
     }
-    printf("-1");
+    if(flag==0){
+        printf("-1");
+    }
     return 0;
 }
