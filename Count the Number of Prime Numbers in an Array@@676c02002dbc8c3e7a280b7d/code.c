@@ -12,7 +12,7 @@ int main(){
         if(a[i]>=2){
             int isPrime=1;
             for(j=2;j*j<=a[i];j++){
-                if(a[i]%2==0){
+                if(a[i]%j==0){
                     isPrime=0;
                     break;
                 }
