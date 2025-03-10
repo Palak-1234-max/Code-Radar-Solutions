@@ -7,7 +7,7 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    int count,temp;
+    int maxCount=0,temp=-1;
     for(i=0;i<n;i++){
         count=0;
         for(j=i+1;j<n;j++){
@@ -15,6 +15,10 @@ int main(){
                 count++;
                 temp=a[i];
             }
+        }
+        if(count>maxCount || (count == maxCount && a[i]<temp)){
+            maxCount = count;
+            temp=a[i];
         }
     }
     printf("%d",temp);
