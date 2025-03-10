@@ -7,17 +7,20 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
+    int flag=0,temp;
     for(i=0;i<n;i++){
         for(j=i+1;j<n;j++){
             if(a[i]==a[j]){
-                printf("%d",a[i]);
-                break;
-            }
-            else{
-                printf("-1");
-                break;
+                flag=1;
+                temp=a[i];
             }
         }
+    }
+    if(flag==1){
+        printf("%d",temp);
+    }
+    else{
+        printf("-1");
     }
     return 0;
 }
