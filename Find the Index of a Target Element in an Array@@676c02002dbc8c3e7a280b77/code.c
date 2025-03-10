@@ -15,6 +15,7 @@ int main(){
         }
         else if(a[i]!=k){
             printf("-1");
+            break;
         }
     }
     printf("-1");
