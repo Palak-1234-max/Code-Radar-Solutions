@@ -11,8 +11,9 @@ int main(){
     for(int i=0;i<n;i++){
         b[i]=a[n-i-1];
     }
-    int flag = 0;
+    
     for(int i=0;i<n;i++){
+        int flag = 0;
         if(a[i]==b[i]){
             flag=1;
         }
