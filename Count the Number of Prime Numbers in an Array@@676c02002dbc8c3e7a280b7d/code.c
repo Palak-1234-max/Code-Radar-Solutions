@@ -7,14 +7,18 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    int count = 0;
+    int count=0;
     for(i=0;i<n;i++){
         if(a[i]>=2){
+            int isPrime=1;
             for(j=2;j<=a[i];j++){
-                if(a[i]%2!=0){
-                    count++;
+                if(a[i]%2==0){
+                    isPrime=0;
+                    break;
                 }
-                break;
+            }
+            if(isPrime==1){
+                count++;
             }
         }
     }
