@@ -12,11 +12,13 @@ int main(){
         for(j=i+1;j<n;j++){
             if(a[i]==a[j]){
                 flag=1;
-                temp=a[j];
+                temp=a[i];
                 break;
             }
         }
-        break;
+        if(flag==1){
+            break;
+        }
     }
     if(flag==1){
         printf("%d",temp);
