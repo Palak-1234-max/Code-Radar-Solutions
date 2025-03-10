@@ -13,6 +13,9 @@ int main(){
             printf("%d",i);
             break;
         }
+        else if(a[i]!=k){
+            printf("-1");
+        }
     }
     printf("-1");
     return 0;
