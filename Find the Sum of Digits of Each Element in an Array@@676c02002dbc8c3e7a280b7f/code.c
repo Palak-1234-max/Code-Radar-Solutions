@@ -11,9 +11,7 @@ int main(){
         int a1=a[i]%10;
         int a2=a[i]/10;
         int sum=a1+a2;
-        for(j=0;j<n;j++){
         printf("%d ",sum);
-    }
     }
     return 0;
 }
