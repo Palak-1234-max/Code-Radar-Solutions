@@ -7,9 +7,9 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    int temp;
+    int flag,temp;
     for(i=0;i<n;i++){
-        int flag=0;
+        flag=0;
         for(j=i+1;j<n;j++){
             if(a[i]==a[j]){
                 flag=1;
