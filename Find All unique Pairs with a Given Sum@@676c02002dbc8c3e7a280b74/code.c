@@ -16,6 +16,9 @@ int main(){
                     break;
                 }
             }
+            if(a[i]==a[j]){
+                break;
+            }
         }
     }
     return 0;
