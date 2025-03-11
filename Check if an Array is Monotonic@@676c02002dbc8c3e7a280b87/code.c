@@ -8,7 +8,7 @@ int main(){
         scanf("%d ",&a[i]);
     }
     int flag=0;
-    int isPalindrome=1;
+    int isPalindrome=0;
     for(i=0;i<n;i++){
         if(a[i]<=a[i+1] || a[i]>=a[i+1]){
             flag=1;
