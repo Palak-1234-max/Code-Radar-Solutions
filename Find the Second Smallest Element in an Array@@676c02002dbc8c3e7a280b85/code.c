@@ -8,9 +8,8 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    int min,smin=-1;
+    int min=a[0],smin=INT_MAX;
     for(i=0;i<n;i++){
-        min=a[0];
         if(a[i]<min){
             smin=min;
             min=a[i];
@@ -19,6 +18,11 @@ int main(){
             smin=a[i];
         }
     }
-    printf("%d",smin);
+    if(smin==INT_MAX){
+        printf("-1");
+    }
+    else{
+        printf("%d",smin);
+    }
     return 0;
 }
