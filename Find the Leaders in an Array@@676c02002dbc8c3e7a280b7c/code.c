@@ -9,15 +9,13 @@ int main(){
     }
     for(i=0;i<n;i++){
         for(j=i+1;j<n;j++){
-            if(a[i]>=a[j]){
-                printf("%d ",a[i]);
-                break;
-            }
-            else{
+            if(a[i]<a[j]){
                 break;
             }
         }
+        if(j==n){
+            printf("%d",a[i]);
+        }
     }
-    printf("%d",a[n-1]);
     return 0;
 }
