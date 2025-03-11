@@ -19,15 +19,11 @@ int main(){
             }
         }
     }
-    if(n%2==0){
-        for(i=0;i<=n/2;i++){
-            median=a[i];
-        }
+    if(n%2!=0){
+        median=a[n/2];
     }
     else{
-        for(i=0;i<=n/2;i++){
-            median=(a[i]+a[i+1])/2;
-        }
+        median=(a[n/2]+a[n/2+1])/2;
     }
     printf("%d",median);
     return 0;
