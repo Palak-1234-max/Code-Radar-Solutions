@@ -20,8 +20,10 @@ int main(){
         }
     }
     if(count==0){
-            max=-1;
+        printf("-1");
     }
-    printf("%d",max);
+    else{
+        printf("%d",max);
+    }
     return 0;
 }
