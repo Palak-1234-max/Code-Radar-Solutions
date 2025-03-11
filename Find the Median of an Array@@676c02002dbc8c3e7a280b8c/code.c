@@ -15,8 +15,8 @@ int main(){
         }
     }
     else{
-        for(i=0;i<n/2;i++){
-            median=a[i]+a[i+1]/2;
+        for(i=0;i<=n/2;i++){
+            median=(a[i]+a[i+1])/2;
         }
     }
     printf("%d",median);
