@@ -25,7 +25,7 @@ int main(){
             }
         }
     }
-    if(flag==1 || isPalindrome==1){
+    if(flag==1 || isPalindrome==0){
         printf("YES");
     }
     else{
