@@ -17,6 +17,9 @@ int main(){
         else if(a[i]<smin && a[i]!=min){
             smin=a[i];
         }
+        else{
+            smin=-1;
+        }
     }
     printf("%d",smin);
     return 0;
