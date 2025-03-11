@@ -23,7 +23,6 @@ int main(){
             if(a[i]==a[j]){
                 flag=1;
             }
-            flag=0;
         }
     }
     if(flag==1 || isPalindrome==0){
