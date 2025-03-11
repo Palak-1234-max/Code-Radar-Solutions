@@ -7,14 +7,14 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    int flag=0;
+    int flag=1;
     int isPalindrome=0;
     for(i=0;i<n;i++){
         if(a[i]<=a[i+1] || a[i]>=a[i+1]){
-            flag=1;
+            flag=0;
         }
-        if(a[i]==a[n-i-1]){
-            isPalindrome=1;
+        if(a[i]!=a[n-i-1]){
+            isPalindrome=0;
         }
     }
     if(flag==1 || isPalindrome==0){
