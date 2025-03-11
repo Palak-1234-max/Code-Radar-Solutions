@@ -23,7 +23,7 @@ int main(){
         median=a[n/2];
     }
     else{
-        median=(a[n/2]+a[n/2+1])/2;
+        median=(a[n/2]+a[(n/2)+1])/2;
     }
     printf("%d",median);
     return 0;
