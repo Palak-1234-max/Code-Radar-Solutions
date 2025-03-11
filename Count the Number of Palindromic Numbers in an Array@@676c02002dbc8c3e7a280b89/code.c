@@ -9,7 +9,7 @@ int main(){
     }
     int isPalindrome=0;
     for(i=0;i<n;i++){
-        if(a[i]>0){
+        if(a[i]>=0){
             int temp, reversedNum = 0, remainder;
             temp=a[i];
             while(a[i]!=0){
