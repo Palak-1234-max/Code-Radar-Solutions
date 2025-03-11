@@ -20,11 +20,8 @@ int main(){
             break;
         }
     }
-    if(flag==0){
+    if(flag==0 || isPalindrome==0){
         printf("YES");
-    }
-    else if(isPalindrome==0){
-        printf("NO");
     }
     else{
         printf("NO");
