@@ -1,4 +1,5 @@
 // Your code here...
+#include <stdio.h>
 void decimalToBinary(int n){
     int binary[32];
     int index=0;
