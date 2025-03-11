@@ -10,13 +10,13 @@ int main()
     }
     int max;
     for(i=0;i<n;i++){
-        max=a[1];
+        max=a[i+1];
         for(j=i+1;j<n;j++){
             if(a[j]>max){
                 max=a[j];
             }
-            a[i]=max;
         }
+        a[i]=max;
         a[n-1]=-1;
     }
     for(i=0;i<n;i++){
