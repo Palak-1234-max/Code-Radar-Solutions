@@ -8,8 +8,8 @@ int main(){
         scanf("%d ",&a[i]);
     }
     int isPalindrome=0;
-    int temp, reversedNum = 0, remainder;
     for(i=0;i<n;i++){
+        int temp, reversedNum = 0, remainder;
         int temp=a[i];
         while(a[i]!=0){
             remainder = a[i] % 10;          // Get the last digit
