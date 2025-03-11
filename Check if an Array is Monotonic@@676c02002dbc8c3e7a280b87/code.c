@@ -17,6 +17,9 @@ int main(){
             else if(a[i]>=a[j]){
                 flag=1;
             }
+            else if(n==1){
+                flag=1;
+            }
         }
     }
     if(flag==1){
