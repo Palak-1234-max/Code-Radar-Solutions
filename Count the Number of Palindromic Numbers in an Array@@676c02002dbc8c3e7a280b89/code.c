@@ -9,15 +9,17 @@ int main(){
     }
     int isPalindrome=0;
     for(i=0;i<n;i++){
-        int temp, reversedNum = 0, remainder;
-        temp=a[i];
-        while(a[i]!=0){
-            remainder = a[i] % 10;          // Get the last digit
-            reversedNum = reversedNum * 10 + remainder;  // Build the reversed number
-            a[i] /= 10;                     // Remove the last digit
-        }
-        if(temp==reversedNum){
-            isPalindrome++;
+        if(a[i]>0){
+            int temp, reversedNum = 0, remainder;
+            temp=a[i];
+            while(a[i]!=0){
+                remainder = a[i] % 10;          // Get the last digit
+                reversedNum = reversedNum * 10 + remainder;  // Build the reversed number
+                a[i] /= 10;                     // Remove the last digit
+            }
+            if(temp==reversedNum){
+                isPalindrome++;
+            }
         }
     }
     printf("%d",isPalindrome);
