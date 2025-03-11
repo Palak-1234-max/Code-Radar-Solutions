@@ -11,7 +11,7 @@ int main(){
     for(i=0;i<n;i++){
         for(j=i+1;j<n;j++){
             flag=0;
-            if(a[i]<=a[j] || a[i]>=a[j]){
+            if(a[i]<a[j] || a[i]>a[j]){
                 flag=1;
             }
         }
