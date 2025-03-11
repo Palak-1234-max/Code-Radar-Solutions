@@ -10,7 +10,7 @@ int main(){
     int isPalindrome=0;
     for(i=0;i<n;i++){
         int temp, reversedNum = 0, remainder;
-        int temp=a[i];
+        temp=a[i];
         while(a[i]!=0){
             remainder = a[i] % 10;          // Get the last digit
             reversedNum = reversedNum * 10 + remainder;  // Build the reversed number
