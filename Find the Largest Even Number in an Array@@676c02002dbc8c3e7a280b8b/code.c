@@ -8,16 +8,18 @@ int main(){
         scanf("%d ",&a[i]);
     }
     int max;
+    for(i=0;i<n;i++){
     if(a[i]%2==0){
             max=a[0];
-            for(i=0;i<n;i++){
-                if(a[i]>max){
-                    max=a[i];
+            for(j=0;j<n;j++){
+                if(a[j]>max){
+                    max=a[j];
                 }
             }
         }
     else{
         max=-1;
+    }
     }
     printf("%d",max);
     return 0;
