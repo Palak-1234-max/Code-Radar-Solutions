@@ -20,6 +20,7 @@ int main(){
             break;
         }
         for(j=i+1;j<n;j++){
+            flag=0;
             if(a[i]==a[j]){
                 flag=1;
             }
