@@ -11,10 +11,8 @@ int main(){
     for(i=0;i<n;i++){
         if(a[i]%2==0){
             max=a[0];
-            for(j=0;j<n;j++){
-                if(a[i]>max){
+            if(a[i]>max){
                     max=a[i];
-                }
             }
         }
         else{
