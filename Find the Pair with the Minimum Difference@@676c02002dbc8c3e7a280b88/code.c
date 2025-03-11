@@ -19,7 +19,7 @@ int main(){
     }
     // Finding the pair with smallest difference
     int min_diff=a[1]-a[0];
-    int element1=a[0], element=a[1];
+    int element1=a[0], element2=a[1];
     for(i=0;i<n-1;i++){
         int diff=a[i+1]-a[i];
         if(diff<min_diff){
