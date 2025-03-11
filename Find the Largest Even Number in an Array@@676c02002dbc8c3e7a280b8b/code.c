@@ -19,7 +19,6 @@ int main(){
         else{
             max=-1;
         }
-    }
     printf("%d",max);
     return 0;
 }
