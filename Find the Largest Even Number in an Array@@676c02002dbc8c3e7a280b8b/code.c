@@ -19,10 +19,8 @@ int main(){
             count++;
         }
     }
-    for(i=0;i<n;i++){
-        if(count==0){
+    if(count==0){
             max=-1;
-        }
     }
     printf("%d",max);
     return 0;
