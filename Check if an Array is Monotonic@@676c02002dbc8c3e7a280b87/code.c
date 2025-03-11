@@ -25,7 +25,10 @@ int main(){
             }
         }
     }
-    if(flag==1 || isPalindrome==0){
+    if(flag==1){
+        printf("YES");
+    }
+    else if(isPalindrome==0){
         printf("YES");
     }
     else{
