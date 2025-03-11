@@ -28,8 +28,8 @@ int main(){
     if(flag==1){
         printf("YES");
     }
-    if(isPalindrome==1){
-        printf("NO");
+    else if(isPalindrome==0){
+        printf("YES");
     }
     else{
         printf("NO");
