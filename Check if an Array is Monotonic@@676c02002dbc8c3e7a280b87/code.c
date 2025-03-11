@@ -13,8 +13,8 @@ int main(){
         if(a[i]<=a[i+1] || a[i]>=a[i+1]){
             flag=1;
         }
-        if(a[i]!=a[n-i-1]){
-            isPalindrome=0;
+        if(a[i]==a[n-i-1]){
+            isPalindrome=1;
         }
     }
     if(flag==1 || isPalindrome==1){
