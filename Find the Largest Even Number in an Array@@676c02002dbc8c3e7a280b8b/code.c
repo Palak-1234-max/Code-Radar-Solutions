@@ -15,8 +15,8 @@ int main(){
                 if(a[j]>max){
                     max=a[j];
                 }
+                count++;
             }
-            count++;
         }
     }
     if(count==0){
