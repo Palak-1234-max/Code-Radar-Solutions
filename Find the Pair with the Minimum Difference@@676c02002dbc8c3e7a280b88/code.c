@@ -7,6 +7,9 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
+    if(n<2){
+        printf("-1");
+    }
     // Sorting the array
     for(i=0;i<n-1;i++){
         for(j=i+1;j<n;j++){
@@ -28,6 +31,8 @@ int main(){
             element2=a[i+1];
         }
     }
-    printf("%d %d",element1,element2);
+    if(n>2){
+        printf("%d %d",element1,element2);
+    }
     return 0;
 }
