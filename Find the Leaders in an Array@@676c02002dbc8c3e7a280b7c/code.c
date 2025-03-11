@@ -13,7 +13,9 @@ int main(){
                 printf("%d ",a[i]);
                 break;
             }
-            break;
+            else{
+                break;
+            }
         }
     }
     printf("%d",a[n-1]);
