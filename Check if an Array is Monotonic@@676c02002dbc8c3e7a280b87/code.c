@@ -9,7 +9,10 @@ int main(){
     }
     int flag=0;
     for(i=0;i<n;i++){
-        if(a[i]<=a[i+1] || a[i]>=a[i+1]){
+        if(a[i]<=a[i+1]){
+            flag=1;
+        }
+        else if(a[i]>=a[i+1]){
             flag=1;
         }
     }
