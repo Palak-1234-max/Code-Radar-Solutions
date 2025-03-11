@@ -14,7 +14,7 @@ int main(){
             }
         }
         if(j==n){
-            printf("%d",a[i]);
+            printf("%d ",a[i]);
         }
     }
     return 0;
