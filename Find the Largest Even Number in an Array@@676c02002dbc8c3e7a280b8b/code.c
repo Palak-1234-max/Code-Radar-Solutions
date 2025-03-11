@@ -9,8 +9,8 @@ int main(){
     }
     int max;
     for(i=0;i<n;i++){
+        max=a[0];
         if(a[i]%2==0){
-            max=a[0];
             if(a[i]>max){
                     max=a[i];
             }
