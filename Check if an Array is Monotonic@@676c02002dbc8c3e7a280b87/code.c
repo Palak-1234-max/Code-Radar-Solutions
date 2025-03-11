@@ -13,6 +13,9 @@ int main(){
             if(a[i]<=a[j] || a[i]>=a[j]){
                 flag=1;
             }
+            else{
+                flag=0;
+            }
         }
     }
     if(flag==1){
