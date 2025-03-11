@@ -9,7 +9,7 @@ int main(){
     }
     // Sorting the array
     for(i=0;i<n-1;i++){
-        for(j=1;j<n;j++){
+        for(j=i+1;j<n;j++){
             if(a[i]>a[j]){
                 int temp=a[i];
                 a[i]=a[j];
