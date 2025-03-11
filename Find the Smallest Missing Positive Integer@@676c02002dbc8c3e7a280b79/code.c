@@ -15,7 +15,6 @@ int main() {
     int arr[n];
 
     // Input elements of the array
-    printf("Enter the elements of the array: ");
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
