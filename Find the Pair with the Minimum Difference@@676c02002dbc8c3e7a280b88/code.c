@@ -31,7 +31,7 @@ int main(){
             element2=a[i+1];
         }
     }
-    if(n>2){
+    if(n>=2){
         printf("%d %d",element1,element2);
     }
     return 0;
