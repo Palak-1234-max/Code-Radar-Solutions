@@ -9,12 +9,15 @@ int main(){
     }
     int flag=1;
     int isPalindrome=1;
-    for(i=0;i<n;i++){
+    for(i=0;i<n-1;i++){
         if(a[i]<=a[i+1] || a[i]>=a[i+1]){
             flag=0;
         }
+    }
+    for(i=0;i<n/2;i++){
         if(a[i]!=a[n-i-1]){
             isPalindrome=0;
+            break;
         }
     }
     if(flag==1 || isPalindrome==0){
