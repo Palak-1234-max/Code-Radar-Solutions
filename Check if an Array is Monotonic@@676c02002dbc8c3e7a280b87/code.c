@@ -19,6 +19,11 @@ int main(){
             isPalindrome=0;
             break;
         }
+        for(j=i+1;j<n;j++){
+            if(a[i]==a[j]){
+                flag=1;
+            }
+        }
     }
     if(flag==1 || isPalindrome==0){
         printf("YES");
