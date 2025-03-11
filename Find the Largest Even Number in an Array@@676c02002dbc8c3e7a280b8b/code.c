@@ -7,10 +7,9 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d ",&a[i]);
     }
-    int max,count=0;
+    int max=a[0],count=0;
     for(i=0;i<n;i++){
         if(a[i]%2==0){
-            max=a[0];
             for(j=0;j<n;j++){
                 if(a[j]>max){
                     max=a[j];
