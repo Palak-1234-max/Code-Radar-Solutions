@@ -21,7 +21,7 @@ int main() {
 
     // Sort the array using a simple bubble sort (for simplicity)
     for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - 1; j++) {
+        for (int j = 0; j < n ; j++) {
             if (arr[j] > arr[j + 1]) {
                 // Swap arr[j] and arr[j + 1]
                 int temp = arr[j];
