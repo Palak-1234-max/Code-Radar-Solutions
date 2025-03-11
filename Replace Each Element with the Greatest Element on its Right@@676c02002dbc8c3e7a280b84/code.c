@@ -12,11 +12,11 @@ int main()
     for(i=0;i<n;i++){
         max=a[1];
         for(j=1;j<n;j++){
-            if(a[i]>max){
-                max=a[i];
+            if(a[j]>max){
+                max=a[j];
             }
-            a[i]=max;
         }
+        a[i]=max;
         a[n-1]=-1;
     }
     for(i=0;i<n;i++){
