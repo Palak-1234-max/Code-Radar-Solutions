@@ -1,24 +1,31 @@
 // Your code here...
 #include <stdio.h>
 
-struct student{
-        int rollno;
-        char name[56];
-        float marks;
-    };
-int main(){
-    struct student stud[1000];
+struct Student {
+    int rollNumber;
+    char name[50];
+    float marks;
+};
+
+int main() {
     int n;
-    scanf("%d",&n);
-    for(int i=0;i<n;i++){
-        scanf("%d",&stud[i].rollno);
-        scanf("%c",stud[i].name);
-        scanf("%f",&stud[i].marks);
+    scanf("%d", &n);
+
+    struct Student students[n], topScorer; 
+   
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
+
+        if (i == 0 || students[i].marks > topScorer.marks) {
+            topScorer = students[i]; 
         }
-    for(int i=0;i<n;i++){
-        printf("Roll Number: %d ,",stud[i].rollno);
-        printf("Name: %c,",stud[i].name);
-        printf("Marks: %f",stud[i].marks);
     }
+
+    printf("Top Scorer: ");
+    printf("Roll Number: %d, ", topScorer.rollNumber);
+    printf("Name: %s, ", topScorer.name);
+    printf("Marks: %.2f\n", topScorer.marks); 
+
     return 0;
 }
