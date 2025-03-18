@@ -4,6 +4,9 @@ int main(){
     char a[50];
     int i,word=1;
     fgets(a, sizeof(a), stdin);
+    if(a[i]=='\n'){
+        a[i]='\0';
+    }
     i=0;
     while(a[i]!=0)
     {
