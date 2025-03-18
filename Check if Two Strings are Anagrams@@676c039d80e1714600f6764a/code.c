@@ -8,8 +8,7 @@ int main(){
     for(i=0;a[i]!='\0';i++){
         for(j=0;a[j]!='\0';j++){
             if(a[i]!=a[j]){
-                flag=1;
-                break;
+                j++;
             }
         }
     }
