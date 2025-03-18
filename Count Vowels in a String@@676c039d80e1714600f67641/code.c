@@ -4,7 +4,7 @@
 int main(){
     char a[50];
     int i,vow=0;
-    gets(a);
+    fgets(a);
     i=0;
     while(a[i]!='\0')
     {
