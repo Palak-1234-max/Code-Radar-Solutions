@@ -4,7 +4,7 @@ int main(){
     char a[100],b[50];
     int i,j;
     fgets(a, sizeof(a), stdin);
-    printf("\n");
+    
     fgets(b, sizeof(b), stdin);
     i=0;
     while(a[i]!=0){
