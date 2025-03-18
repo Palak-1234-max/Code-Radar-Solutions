@@ -11,8 +11,8 @@ int main(){
     }
     while(b[j]!='\0'){
         a[i]=b[j];
-        j++;
         i++;
+        j++;
     }
     a[i]='\0';
     printf("%s",a);
