@@ -5,6 +5,12 @@ int main(){
     int i,j;
     fgets(a, sizeof(a), stdin);  
     fgets(b, sizeof(b), stdin);
+    if (a[strlen(a) - 1] == '\n') {
+        a[strlen(a) - 1] = '\0';
+    }
+    if (b[strlen(b) - 1] == '\n') {
+        b[strlen(b) - 1] = '\0';
+    }
     i=j=0;
     while(a[i]!='\0'){
         i++;
