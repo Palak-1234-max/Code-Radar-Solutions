@@ -7,7 +7,7 @@ int main(){
     i=0;
     while(a[i]!=0)
     {
-        if(a[i]!=' ' && inword){
+        if(a[i]!=' ' && !inword){
             word++;
             inword=1;
         }
