@@ -9,7 +9,7 @@ int main(){
         i++;
     }
     j=0;
-    while(a[j]!=0){
+    while(b[j]!=0){
         a[i]=b[j];
         j++;
         i++;
