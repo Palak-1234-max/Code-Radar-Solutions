@@ -3,8 +3,8 @@
 int main(){
     char a[100],b[50];
     int i,j;
-    fgets(a, sizeof(a), stdin);
-    fgets("\n",b, sizeof(b), stdin);
+    scanf("%s",&a);
+    scanf("\n%s",&b);
     i=0;
     while(a[i]!=0){
         i++;
