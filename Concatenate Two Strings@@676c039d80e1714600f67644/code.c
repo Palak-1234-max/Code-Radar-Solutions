@@ -14,6 +14,7 @@ int main(){
         j++;
         i++;
     }
+    a[i]='\0';
     printf("%d",a);
     return 0;
 }
