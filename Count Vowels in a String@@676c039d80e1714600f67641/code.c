@@ -3,7 +3,7 @@
 int main(){
     char a[50];
     int i,vow=0;
-    fgets(a);
+    scanf("%s",&a);
     i=0;
     while(a[i]!='\0')
     {
