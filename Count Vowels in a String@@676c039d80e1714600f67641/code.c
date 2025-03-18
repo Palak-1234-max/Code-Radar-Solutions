@@ -1,6 +1,5 @@
 // Your code here...
 #include <stdio.h>
-#include <conio.h>
 int main(){
     char a[50];
     int i,vow=0;
