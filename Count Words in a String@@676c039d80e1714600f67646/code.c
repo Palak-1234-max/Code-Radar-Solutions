@@ -3,11 +3,8 @@
 #include <string.h>
 int main(){
     char a[50];
-    int i,word=1, inword=0;
+    int i,word=0, inword=0;
     fgets(a, sizeof(a), stdin);
-    if (a[strlen(a) - 1] == '\n') {
-        a[strlen(a) - 1] = '\0';
-    }
     i=0;
     while(a[i]!=0)
     {
