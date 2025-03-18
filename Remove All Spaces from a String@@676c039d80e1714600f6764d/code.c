@@ -9,6 +9,7 @@ int main(){
             a[i]=a[i+1];
             a[i+1]=' ';
         }
+        i=i-1;
     }
     printf("%s",a);
     return 0;
