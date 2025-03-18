@@ -7,8 +7,8 @@ int main(){
     fgets(b, sizeof(b), stdin);
     for(i=0;a[i]!='\0';i++){
         flag=0;
-        for(j=0;a[j]!='\0';j++){
-            if(a[i]==a[j]){
+        for(j=0;b[j]!='\0';j++){
+            if(a[i]==b[j]){
                 flag=1;
                 break;
             }
