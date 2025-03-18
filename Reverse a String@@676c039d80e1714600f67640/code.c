@@ -4,7 +4,7 @@
 int main(){
     char a[50],b[50];
     int i,j;
-    scanf("%d",&a);
+    gets(a, sizeof(a), stdin);
     j=0;
     for(i=strlen(a)-1;i>=0;i--){
         b[j]=a[i];
