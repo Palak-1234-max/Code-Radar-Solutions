@@ -12,6 +12,7 @@ int main(){
                 vow++;
             }
         }
+        i++;
     }
     printf("%d",vow);
     return 0;
