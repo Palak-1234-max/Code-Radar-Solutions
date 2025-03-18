@@ -5,11 +5,10 @@ int main(){
     int i,j;
     fgets(a, sizeof(a), stdin);  
     fgets(b, sizeof(b), stdin);
-    i=0;
+    i=j=0;
     while(a[i]!='\0'){
         i++;
     }
-    j=0;
     while(b[j]!='\0'){
         a[i]=b[j];
         j++;
