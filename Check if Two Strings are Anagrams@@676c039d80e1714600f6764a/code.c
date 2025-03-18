@@ -1,5 +1,6 @@
 // Your code here...
 #include <stdio.h>
+#include <string.h>
 
 #define MAX_CHAR 256  // Total number of characters (ASCII range)
 
