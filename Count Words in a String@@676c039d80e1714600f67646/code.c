@@ -10,7 +10,9 @@ int main(){
     i=0;
     while(a[i]!=0)
     {
-        if(a[i]==' ') word++;
+        if(a[0]!=' '){
+            if(a[i]==' ') word++;
+        }
         i++;
     }
     printf("%d",word);
