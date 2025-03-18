@@ -10,7 +10,7 @@ int main(){
         b[j]=a[i];
         j++;
     }
-    for(i=0;i<=strlen(a);i++){
+    for(i=0;i<strlen(a);i++){
         if(a[i]!=b[i]){
             flag=1;
             break;
