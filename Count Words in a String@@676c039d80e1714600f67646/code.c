@@ -2,18 +2,20 @@
 #include <stdio.h>
 int main(){
     char a[50];
-    int i,word=1;
+    int i,word=1, inword=0;
     fgets(a, sizeof(a), stdin);
-    if(a[i]=='\n'){
-        a[i]='\0';
-    }
-    if((a[i]>='a' && a[i]<='z') ||(a[i]>='A' && a[i]<='Z'))
-    {i=0;
+    i=0;
     while(a[i]!=0)
     {
-        if(a[i]==' ') word++;
+        if(a[i]!=' ' && inword){
+            word++;
+            inword=1;
+        }
+        else if(a[i]==' '){
+            inword=0;
+        }
         i++;
-    }}
+    }
     printf("%d",word);
     return 0;
 }
