@@ -7,8 +7,9 @@ int main(){
     scanf("%c",c);
     int freq=0,i;
     for(i=0;a[i]!='\0';i++){
-        if(a[i]==c)
-        freq++;
+        if(a[i]==c){
+            freq++;
+        }      
     }
     printf("%d",freq);
     return 0;
