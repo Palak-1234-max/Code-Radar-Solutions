@@ -16,6 +16,6 @@ int main(){
         i++;
     }
     a[i]='\0';
-    printf("%d",a);
+    printf("%s",a);
     return 0;
 }
