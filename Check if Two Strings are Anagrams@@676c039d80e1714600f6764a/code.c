@@ -13,6 +13,9 @@ int main(){
                 break;
             }
         }
+        if(flag==1){
+            break;
+        }
     }
     if(flag==1){
         printf("Yes");
