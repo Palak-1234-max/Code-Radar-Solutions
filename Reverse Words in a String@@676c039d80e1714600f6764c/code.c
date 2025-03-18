@@ -4,8 +4,8 @@
 
 int main() {
     char str[100];
-    int i, start, end, len;
-
+    int start, end, len, i;
+    
     // Get the input string
     fgets(str, sizeof(str), stdin);
     
@@ -27,7 +27,7 @@ int main() {
         end--;
     }
 
-    // Step 2: Reverse each word in the string
+    // Step 2: Reverse each word back to original order
     start = 0;
     for (i = 0; i <= len; i++) {
         // When a space or the end of the string is found, reverse the word
@@ -45,7 +45,7 @@ int main() {
         }
     }
 
-    // Print the final string with words reversed
+    // Print the final string with the entire string reversed but words in the original order
     printf("%s", str);
     
     return 0;
