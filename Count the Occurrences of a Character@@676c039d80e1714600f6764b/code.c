@@ -7,6 +7,7 @@ int main(){
     int freq=0,i;
     scanf("%c",c);
     for(i=0;a[i]!='\0';i++){
+        if(a[i]==c)
         freq++;
     }
     printf("%d",freq);
