@@ -5,7 +5,7 @@
 int main() {
     char str[100];
     int i, start, end, len;
-    
+
     // Get the input string
     fgets(str, sizeof(str), stdin);
     
@@ -14,7 +14,7 @@ int main() {
 
     // Find the length of the string
     len = strlen(str);
-    
+
     // Step 1: Reverse the entire string
     start = 0;
     end = len - 1;
