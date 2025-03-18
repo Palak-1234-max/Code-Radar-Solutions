@@ -1,16 +1,25 @@
 // Your code here...
 #include <stdio.h>
-int main(){
+
+int main() {
     char a[100];
     fgets(a, sizeof(a), stdin);
-    int i;
-    for(i=0;a[i]!=0;i++){
-        if(a[i]==' '){
-            a[i]=a[i+1];
-            a[i+1]=' ';
+
+    // Remove newline character that fgets might add
+    a[strcspn(a, "\n")] = '\0';
+
+    int i, j = 0;
+    
+    // Iterate through the string and copy non-space characters
+    for (i = 0; a[i] != '\0'; i++) {
+        if (a[i] != ' ') {  // Only copy non-space characters
+            a[j++] = a[i];
         }
-        i=i-1;
     }
-    printf("%s",a);
+    
+    // Null-terminate the modified string
+    a[j] = '\0';
+    
+    printf("%s\n", a);  // Print the string with spaces removed
     return 0;
 }
