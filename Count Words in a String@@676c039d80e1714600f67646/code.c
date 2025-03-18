@@ -3,7 +3,7 @@
 int main(){
     char a[50];
     int i,word=1;
-    fgets(a);
+    fgets(a, sizeof(a), stdin);
     i=0;
     while(a[i]!=0)
     {
