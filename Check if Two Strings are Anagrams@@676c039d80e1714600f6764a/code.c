@@ -12,6 +12,7 @@ int main(){
                 break;
             }
         }
+        flag=0;
     }
     if(flag==1){
         printf("Yes");
