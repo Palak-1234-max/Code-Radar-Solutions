@@ -1,5 +1,6 @@
 // Your code here...
 #include <stdio.h>
+#include <string.h>
 int main(){
     char a[50];
     int i,word=1, inword=0;
