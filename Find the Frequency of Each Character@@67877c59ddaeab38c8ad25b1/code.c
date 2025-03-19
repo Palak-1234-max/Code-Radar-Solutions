@@ -8,10 +8,13 @@ int main(){
         freq=1;
         for(j=i+1;a[j]!=0;j++){
             if(a[i]==a[j]){
+                a[j]='*';
                 freq++;
             }
         }
-        printf("%c: %d\n",a[i],freq);
+        if(a[i]!='*'){
+            printf("%c: %d\n",a[i],freq);
+        }
     }
     return 0;
 }
