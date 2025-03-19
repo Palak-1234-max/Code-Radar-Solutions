@@ -8,18 +8,16 @@ int main(){
     for(i=0;a[i]!='\0';i++){
         flag=0;
         for(j=i+1;a[j]!=0;j++){
-            if(a[i]!=a[j]){
+            if(a[i]==a[j]){
                 flag=1;
-                temp=a[i];
-                break;
             }
         }
     }
     if(flag==1){
-        printf("%c",temp);
+        printf("-");
     }
     else{
-        printf("-");
+        printf("%c",temp);
     }
     return 0;
 }
