@@ -27,15 +27,15 @@ char* expandAroundCenter(char str[], int left, int right, int length) {
 // Function to find the largest palindromic substring
 char* longestPalindrome(char str[]) {
     int length = strlen(str);
-    char* largestPalindrome = "";
+    char *largestPalindrome = "";
     
     // Loop over each character in the string as a center
     for (int i = 0; i < length; i++) {
         // Odd length palindromes (centered at i)
-        char* oddPalindrome = expandAroundCenter(str, i, i, length);
+        char *oddPalindrome = expandAroundCenter(str, i, i, length);
         
         // Even length palindromes (centered between i and i+1)
-        char* evenPalindrome = expandAroundCenter(str, i, i + 1, length);
+        char *evenPalindrome = expandAroundCenter(str, i, i + 1, length);
         
         // Compare the lengths of palindromes and update the largest one found
         if (strlen(oddPalindrome) > strlen(largestPalindrome)) {
@@ -56,7 +56,7 @@ int main() {
     scanf("%s", str);
     
     // Find and print the largest palindromic substring
-    char* largestPal = longestPalindrome(str);
+    char *largestPal = longestPalindrome(str);
     printf("%s", largestPal);
     
     return 0;
