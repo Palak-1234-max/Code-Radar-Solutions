@@ -13,12 +13,14 @@ int main(){
                 break;
             }
         }
-    }
-    if(count==1 && a[i]!='-'){
-        printf("%c",a[i]);
-    }
-    else{
-        printf("-");
+        if(count==1 && a[i]!='-'){
+            printf("%c",a[i]);
+            break;
+        }
+        else{
+            printf("-");
+            break;
+        }
     }
     return 0;
 }
