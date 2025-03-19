@@ -2,10 +2,9 @@
 #include <stdio.h>
 int main(){
     int a[100];
-    int i,flag;
+    int i,flag=0;
     scanf("%s",&a);
     for(i=0;a[i]!='\0';i++){
-        flag=0;
         if(a[i]==0 || a[i]==1){
             flag=1;
         }
