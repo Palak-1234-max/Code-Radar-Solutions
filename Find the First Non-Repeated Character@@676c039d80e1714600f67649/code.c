@@ -9,6 +9,7 @@ int main(){
         for(j=1;a[j]!='\0';j++){
             if(a[i]==a[j]){
                 count++;
+                a[j]='-';
             }
         }
     }
