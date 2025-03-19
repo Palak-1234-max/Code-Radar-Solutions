@@ -16,10 +16,7 @@ int main(){
             printf("%c",a[i]);
             break;
         }
-        else{
-            printf("-");
-            
-        }
+        
     }
     return 0;
 }
