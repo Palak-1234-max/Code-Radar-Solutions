@@ -10,7 +10,6 @@ int main(){
             if(a[i]==a[j]){
                 count++;
                 a[j]='-';
-                break;
             }
         }
         if(count==1 && a[i]!='-'){
