@@ -9,6 +9,7 @@ int main(){
         for(j=i+1;a[j]!='\0';j++){
             if(a[i]==a[j]){
                 a[j]=a[j+1];
+                i=i-1;
             }
         }
     }
