@@ -9,7 +9,7 @@ int main(){
             if(a[i]>='a' && a[i]<='z'){
                 a[i]=a[i]-32;
             }
-            elseif(a[i]>='A' && a[i]<='Z'){
+            else if(a[i]>='A' && a[i]<='Z'){
                 a[i]=a[i]+32;
             }
         }
