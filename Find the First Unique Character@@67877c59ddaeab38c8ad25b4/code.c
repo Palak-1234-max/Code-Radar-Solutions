@@ -15,7 +15,7 @@ int main(){
             }
         }
     }
-    if(flag=1){
+    if(flag==1){
         printf("%c",temp);
     }
     else{
