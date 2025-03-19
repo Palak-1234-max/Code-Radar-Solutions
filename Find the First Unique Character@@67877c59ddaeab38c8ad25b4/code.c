@@ -3,18 +3,22 @@
 int main(){
     char a[100];
     fgets(a, sizeof(a), stdin);
-    int i,j;
+    int i,j,temp,flag;
     for(i=0;a[i]!='\0';i++){
+        flag=0;
         for(j=i+1;a[j]!=0;j++){
             if(a[i]!=a[j]){
-                printf("%c",a[i]);
-                break;
-            }
-            else{
-                printf("-");
+                flag=1;
+                temp=a[i];
                 break;
             }
         }
+    }
+    if(flag=1){
+        printf("%c",temp);
+    }
+    else{
+        printf("-");
     }
     return 0;
 }
