@@ -49,7 +49,7 @@ int main() {
     char str[1000];
     
     // Read input string
-    scanf("%s", str);
+    scanf("%s", &str);
     
     // Find and print the largest palindromic substring
     char* largestPal = longestPalindrome(str);
