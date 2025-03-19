@@ -36,9 +36,6 @@ int main() {
         for (i = minStart; i < minEnd; i++) {
             printf("%c", a[i]);
         }
-    } else {
-        printf("-");
     }
-
     return 0;
 }
