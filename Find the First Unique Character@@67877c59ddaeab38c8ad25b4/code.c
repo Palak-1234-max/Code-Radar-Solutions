@@ -3,8 +3,8 @@
 int main(){
     char a[100];
     fgets(a, sizeof(a), stdin);
+    a[strcspn(a, "\n")] = '\0';
     int i,j,flag,foundUnique=0;
-    char temp;
     for(i=0;a[i]!='\0';i++){
         flag=0;
         for(j=i+1;a[j]!='\0';j++){
