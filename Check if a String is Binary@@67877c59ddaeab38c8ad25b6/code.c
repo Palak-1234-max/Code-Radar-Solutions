@@ -1,7 +1,7 @@
 // Your code here...
 #include <stdio.h>
 int main(){
-    char a[100];
+    int a[100];
     fgets(a, sizeof(a), stdin);
     int i,flag;
     for(i=0;a[i]!='\0';i++){
