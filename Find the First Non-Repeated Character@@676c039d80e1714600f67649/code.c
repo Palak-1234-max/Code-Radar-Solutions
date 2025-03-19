@@ -13,7 +13,7 @@ int main(){
             }
         }
     }
-    if(count==1){
+    if(count==1 && a[i]!='-'){
         printf("%c",a[i]);
     }
     else{
