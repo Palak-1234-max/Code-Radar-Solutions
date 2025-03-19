@@ -3,7 +3,7 @@
 int main(){
     char a[100];
     fgets(a, sizeof(a), stdin);
-    int i,j,flag,foundUnique;
+    int i,j,flag,foundUnique=0;
     char temp;
     for(i=0;a[i]!='\0';i++){
         flag=0;
