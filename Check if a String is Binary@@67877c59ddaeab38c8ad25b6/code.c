@@ -13,7 +13,7 @@ int main(){
     if(flag==1){
         printf("Yes");
     }
-    else{
+    else if(flag==0){
         printf("No");
     }
     return 0;
