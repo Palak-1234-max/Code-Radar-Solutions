@@ -4,7 +4,7 @@ int main(){
     int a[100];
     int i,flag;
     for(i=0;a[i]!='\0';i++){
-        scanf("%d",a[i]);
+        scanf("%d",&a[i]);
     }
     for(i=0;a[i]!='\0';i++){
         flag=0;
