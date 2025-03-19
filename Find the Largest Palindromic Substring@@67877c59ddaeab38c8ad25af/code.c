@@ -3,7 +3,7 @@
 #include <string.h>
 
 // Helper function to expand around the center and find the longest palindrome
-char* expandAroundCenter(char str[], int left, int right, int length) {
+char *expandAroundCenter(char str[], int left, int right, int length) {
     // Expand as long as the characters at both ends are equal
     while (left >= 0 && right < length && str[left] == str[right]) {
         left--;
@@ -25,7 +25,7 @@ char* expandAroundCenter(char str[], int left, int right, int length) {
 }
 
 // Function to find the largest palindromic substring
-char* longestPalindrome(char str[]) {
+char *longestPalindrome(char str[]) {
     int length = strlen(str);
     char *largestPalindrome = "";
     
