@@ -3,7 +3,7 @@
 int main(){
     char a[100];
     fgets(a, sizeof(a), stdin);
-    int i,j,freq;
+    int i,j,freq,temp;
     for(i=0;a[i]!='\0';i++){
         freq=1;
         for(j=i+1;a[j]!=0;j++){
