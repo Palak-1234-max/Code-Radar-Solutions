@@ -6,10 +6,11 @@ int main(){
     int i,j,count;
     for(i=0;a[i]!='\0';i++){
         count=1;
-        for(j=1;a[j]!='\0';j++){
+        for(j=i+1;a[j]!='\0';j++){
             if(a[i]==a[j]){
                 count++;
                 a[j]='-';
+                break;
             }
         }
     }
