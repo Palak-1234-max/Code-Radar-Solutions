@@ -11,7 +11,7 @@ int main(){
         }
     }
     for(i=0;a[i]!=0;i++){
-        printf("%c: %d",a[i],freq);
+        printf("%c: %d\n",a[i],freq);
     }
     return 0;
 }
