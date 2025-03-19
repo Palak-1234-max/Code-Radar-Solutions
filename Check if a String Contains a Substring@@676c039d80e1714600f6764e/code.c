@@ -1,6 +1,6 @@
 // Your code here...
 #include <stdio.h>
-
+#include <string.h>
 int containsSubstring(char *str, char *substring) {
     int i = 0, j = 0;
 
