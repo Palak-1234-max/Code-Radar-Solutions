@@ -10,7 +10,7 @@ int selectionSort(int a[], int n){
             }
         }
     }
-    return a;
+    return a[n];
 }
 
 int printArray(int a[],int n){
