@@ -7,8 +7,8 @@ char bubbleSort(char a[],int n){
                 a[j+1]=temp;
             }
         }
-        return a[n];
     }
+    return a[n];
 }
 char printArray(char a[], int n){
     for(int i=0;i<n;i++){
