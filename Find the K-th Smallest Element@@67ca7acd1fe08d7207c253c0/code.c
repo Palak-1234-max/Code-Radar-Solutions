@@ -1,6 +1,7 @@
 // Your code here...
 #include <limits.h>
 int kthSmallest(int a[], int n, int k){
+    int flag=false;
     for(int i=0;i<n;i++){
         int min= INT_MAX;
         int minidx=-1;
@@ -14,6 +15,10 @@ int kthSmallest(int a[], int n, int k){
         int temp=a[minidx];
         a[minidx]=a[i];
         a[i]=temp;
+        flag=true;
+    }
+    if(flag==false){
+        return -1;
     }
     return a[k-1];
 }
