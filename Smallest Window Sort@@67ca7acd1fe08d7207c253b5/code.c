@@ -12,7 +12,7 @@ int findUnsortedSubarray(int a[], int n){
         return 0;
     }
     // find the right boundary
-    for(int i=n-1;i>0;i--){
+    for(int i=n-1;i>=0;i--){
         if(a[i-1]>a[i]){
             right=i;
             break;
