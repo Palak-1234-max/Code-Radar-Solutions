@@ -1,14 +1,10 @@
 void fibonacciSeries(int n){
-    int a[n];
-    while(n>0){
-        a[0]=0;
-        a[1]=1;
-        int sum=0;
-        for(int i=0;i<n;i++){
-            sum=sum+a[i];
-        }
-    }
-    for(int i=0;i<n;i++){
-        printf("%d ",a[i]);
+    static int n1=0,n2=1,n3;
+    if(n>0){
+        n3=n1+n2;
+        n1=n2;
+        n2=n3;
+        printf("\n%d",n3);
+        fibonacciSeries(n-1);
     }
 }
