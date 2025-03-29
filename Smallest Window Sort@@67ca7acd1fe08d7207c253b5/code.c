@@ -30,7 +30,7 @@ int findUnsortedSubarray(int a[], int n){
         }
     }
     // expand right boundary
-    for(i=n-1;i>right;i--){
+    for(int i=n-1;i>right;i--){
         if(a[i]>max){
             right=i;
             break;
