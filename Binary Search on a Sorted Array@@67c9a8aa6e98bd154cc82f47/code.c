@@ -1,6 +1,6 @@
 int binarySearch(int a[], int n, int target){
-    int i,j,flag,mid;
-    while(i<=j){
+    int left,right,flag,mid;
+    while(left<=right){
         int left=0, right=n-1;
         flag=0;
         mid=(left+right)/2;
@@ -9,10 +9,10 @@ int binarySearch(int a[], int n, int target){
             break;
         }
         else if(a[mid]<target){
-            i=mid+1;
+            left=mid+1;
         }
         else{
-            j=mid-1;
+            right=mid-1;
         }
     }
     if(flag==1){
