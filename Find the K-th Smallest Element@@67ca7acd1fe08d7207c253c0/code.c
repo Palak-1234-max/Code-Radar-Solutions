@@ -17,7 +17,6 @@ int kthSmallest(int a[], int n, int k){
         int temp=a[minidx];
         a[minidx]=a[i];
         a[i]=temp;
-        flag=1;
     }
     return a[k-1];
 }
