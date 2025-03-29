@@ -1,6 +1,6 @@
 void fibonacciSeries(int n){
+    int a[n];
     while(n>0){
-        int a[n];
         a[0]=0;
         a[1]=1;
         int sum=0;
