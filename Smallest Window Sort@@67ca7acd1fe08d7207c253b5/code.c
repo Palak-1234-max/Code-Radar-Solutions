@@ -38,6 +38,6 @@ int findUnsortedSubarray(int a[], int n){
             break;
         }
     }
-    int result=right-left;
+    int result=right-left+1;
     return result;
 }
