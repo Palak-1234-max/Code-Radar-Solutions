@@ -13,4 +13,5 @@ int findOccurrence(int a[], int n, int target, char mode){
             }
         }
     }
+    return -1;
 }
