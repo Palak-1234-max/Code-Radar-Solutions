@@ -1,5 +1,5 @@
 int binarySearch(int a[], int n, int target){
-    int left=0, right=n-1,flag,mid;
+    int i,j,left=0, right=n-1,flag,mid;
     while(i<=j){
         flag=0;
         mid=(left+right)/2;
