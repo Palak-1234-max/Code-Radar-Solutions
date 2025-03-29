@@ -4,6 +4,7 @@ int findUnsortedSubarray(int a[], int n){
     for(int i=0;i<n-1;i++){
         if(a[i]>a[i+1]){
             left=i;
+            break;
         }
     }
     // if array is already sorted
@@ -14,6 +15,7 @@ int findUnsortedSubarray(int a[], int n){
     for(int i=n-1;i>0;i--){
         if(a[i-1]>a[i]){
             right=i;
+            break;
         }
     }
     //find max and min within the subarray
