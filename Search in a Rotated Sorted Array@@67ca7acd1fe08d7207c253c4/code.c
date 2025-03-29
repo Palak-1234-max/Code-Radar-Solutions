@@ -28,19 +28,3 @@ int searchInRotatedArray(int arr[], int n, int target) {
 
     return -1; // Target not found
 }
-
-// Driver Code
-int main() {
-    int arr[] = {15, 18, 2, 3, 6, 12}; // Rotated sorted array
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int target = 3;
-
-    int index = searchInRotatedArray(arr, n, target);
-
-    if (index != -1)
-        return index;
-    else
-        return target;
-
-    return 0;
-}
