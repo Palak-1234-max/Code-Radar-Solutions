@@ -2,7 +2,7 @@
 int insertionSort(int a[], int n){
     for(int i=1;i<n;i++){
         int j=i;
-        while(a[j]<a[j-1]){
+        while(j>=1 && a[j]<a[j-1]){
             int temp=a[j];
             a[j]=a[j-1];
             a[j-1]=temp;
