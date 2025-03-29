@@ -9,6 +9,6 @@ int fibonacciSeries(int n){
         }
     }
     for(int i=0;i<n;i++){
-        return a[i];
+        printf("%d ",a[i]);
     }
 }
