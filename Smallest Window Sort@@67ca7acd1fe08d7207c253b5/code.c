@@ -8,7 +8,7 @@ int findUnsortedSubarray(int a[], int n){
     }
     // if array is already sorted
     if(left==-1){
-        return;
+        return 0;
     }
     // find the right boundary
     for(int i=n-1;i>0;i--){
