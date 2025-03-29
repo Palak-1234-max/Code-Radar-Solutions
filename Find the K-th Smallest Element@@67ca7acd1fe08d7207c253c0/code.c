@@ -1,7 +1,7 @@
 // Your code here...
 #include <limits.h>
 int kthSmallest(int a[], int n, int k){
-    if(k>=n){
+    if(k>=n || k<=0){
         return -1;
     }
     for(int i=0;i<n;i++){
