@@ -1,7 +1,7 @@
 #include <limits.h>
 char selectionSort(char a[], int n){
     for(int i=0;i<n-1;i++){
-        char min = INT_MAX;
+        char min = a[i];
         int minidx=-1;
         for(int j=i;j<n;j++){
             if(a[j]<min){
