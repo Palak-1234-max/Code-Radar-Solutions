@@ -2,7 +2,6 @@
 #include <stdio.h>
 int main() {
     int n;
-    // Input size of the array
     scanf("%d", &n);
 
     if (n == 0) {
@@ -11,7 +10,6 @@ int main() {
     }
 
     int arr[n];
-    // Input elements of the array
     for (int i = 0; i < n; i++) {
         scanf("%d ", &arr[i]);
     }
@@ -19,7 +17,7 @@ int main() {
     // Variable to keep track of the majority element
     int candidate = arr[0], count = 1;
 
-    // Finding the candidate for majority element using Boyer-Moore Voting Algorithm
+    // Finding the candidate for majority element 
     for (int i = 1; i < n; i++) {
         if (arr[i] == candidate) {
             count++;
