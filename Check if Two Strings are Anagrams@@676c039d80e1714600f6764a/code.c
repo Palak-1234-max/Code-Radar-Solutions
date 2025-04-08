@@ -2,6 +2,14 @@
 #include <string.h>
 #include <stdbool.h>
 
+// Function to remove trailing newline character from fgets input
+void removeNewline(char *str) {
+    size_t len = strlen(str);
+    if (len > 0 && str[len - 1] == '\n') {
+        str[len - 1] = '\0';
+    }
+}
+
 bool areAnagrams(char str1[], char str2[]) {
     // If lengths are different, not anagrams
     if (strlen(str1) != strlen(str2)) {
@@ -32,6 +40,10 @@ int main() {
     char str2[50];
     fgets(str1,sizeof(str1),stdin);
     fgets(str2,sizeof(str2),stdin);
+
+    // Remove newline characters
+    removeNewline(str1);
+    removeNewline(str2);
 
     if (areAnagrams(str1, str2)) {
         printf("Yes");
