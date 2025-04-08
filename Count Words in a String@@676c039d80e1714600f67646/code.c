@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -9,7 +8,7 @@ int main(){
     a[strlen(a) - 1] = '\0';
     }
     i=0;
-    while(a[i]!=0)
+    while(a[i]!='\0')
     {
         if(a[i]!=' ' && !inword){
             word++;
