@@ -1,41 +1,43 @@
-// Your code here...
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 
-#define MAX_CHAR 256  // Total number of characters (ASCII range)
-
-int main() {
-    char a[50], b[50];
-    int freqA[MAX_CHAR] = {0}, freqB[MAX_CHAR] = {0};
-    int i;
-
-    // Read two strings
-    fgets(a, sizeof(a), stdin);
-    fgets(b, sizeof(b), stdin);
-
-    // Remove newline character if present (from fgets)
-    a[strcspn(a, "\n")] = '\0';
-    b[strcspn(b, "\n")] = '\0';
-
-    // Count frequency of each character in string a
-    for(i = 0; a[i] != '\0'; i++) {
-        freqA[(int)a[i]]++;
+bool areAnagrams(char str1[], char str2[]) {
+    // If lengths are different, not anagrams
+    if (strlen(str1) != strlen(str2)) {
+        return false;
     }
 
-    // Count frequency of each character in string b
-    for(i = 0; b[i] != '\0'; i++) {
-        freqB[(int)b[i]]++;
+    // Create a count array for all ASCII characters
+    int count[256] = {0};
+
+    // Count characters in str1 and subtract in str2
+    for (int i = 0; str1[i] != '\0'; i++) {
+        count[(unsigned char)str1[i]]++;
+        count[(unsigned char)str2[i]]--;
     }
 
-    // Compare frequency arrays of both strings
-    for(i = 0; i < MAX_CHAR; i++) {
-        if(freqA[i] != freqB[i]) {
-            printf("No\n");
-            return 0;  // If frequencies don't match, no need to check further
+    // Check if all counts are zero
+    for (int i = 0; i < 256; i++) {
+        if (count[i] != 0) {
+            return false;
         }
     }
 
-    // If frequencies match, print "Yes"
-    printf("Yes\n");
+    return true;
+}
+
+int main() {
+    char str1[50];
+    char str2[50];
+    fgets(str1,sizeof(str1),stdin);
+    fgets(str2,sizeof(str2),stdin);
+
+    if (areAnagrams(str1, str2)) {
+        printf("Yes");
+    } else {
+        printf("No");
+    }
+
     return 0;
 }
