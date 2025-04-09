@@ -15,12 +15,10 @@ int main(){
     while(a[i]!='\0'){
         i++;
     }
-    while(b[j]!='\0'){
+    for(j=0;a[j]!='\0';j++){
         a[i]=b[j];
-        i++;
-        j++;
     }
     a[i]='\0';
-    printf("%s",a);
+    puts(a);
     return 0;
 }
