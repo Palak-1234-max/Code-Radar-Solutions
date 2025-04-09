@@ -2,7 +2,7 @@
 int main(){
     char a[50];
     fgets(a,sizeof(a),stdin);
-    int word=1,inword=0;
+    int word=0,inword=0;
     for(int i=0;a[i]!='\0';i++){
         if(a[i]!=' '){
             inword=1;
