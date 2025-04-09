@@ -12,5 +12,6 @@ int main(){
         i++;
     }
     rev[i]='\0';
+    puts(rev);
     return 0;
 }
