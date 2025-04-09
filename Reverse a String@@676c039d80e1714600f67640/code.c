@@ -1,15 +1,16 @@
-// Your code here...
 #include <stdio.h>
-#include <string.h>
 int main(){
-    char a[50],b[50];
-    int i,j;
-    fgets(a, sizeof(a), stdin);
-    j=0;
-    for(i=strlen(a)-1;i>=0;i--){
-        b[j]=a[i];
-        j++;
+    char str[50],rev[50];
+    fgets(str, sizeof(str), stdin);
+    int count=0;
+    for(int i=0;str[i]!='\0';i++){
+        count++;
     }
-    printf("%s",b);
+    int i=0;
+    while(str[i]!='\0'){
+        rev[i]=str[count-1-i];
+        i++;
+    }
+    rev[i]='\0';
     return 0;
 }
