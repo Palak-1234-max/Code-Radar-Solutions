@@ -12,9 +12,9 @@ int main(){
             end=i-1;
             while(start<end){
                 char temp;
-                temp=a[end];
-                a[end]=a[start];
-                a[start]=temp;
+                temp=a[start];
+                a[start]=a[end];
+                a[end]=temp;
                 start++;
                 end--;
             }
