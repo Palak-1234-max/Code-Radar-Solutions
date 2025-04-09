@@ -2,11 +2,12 @@
 #include <string.h>
 int main(){
     char a[50];
-    int start=0,end;
+    int start,end;
     fgets(a, sizeof(a), stdin);
     if(a[strlen(a)-1]=='\n'){
         a[strlen(a)-1]='\0';
     }
+    start=0;
     for(int i=0;a[i]!='\0';i++){
         if(a[i]==' ' || a[i]=='\n'){
             end=i-1;
