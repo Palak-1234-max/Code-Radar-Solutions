@@ -4,11 +4,12 @@ int main(){
     fgets(a,sizeof(a),stdin);
     int word=0,inword=0;
     for(int i=0;a[i]!='\0';i++){
-        if(a[i]!=' '){
+        if(a[i]!=' ' && !inword){
+            word++;
             inword=1;
         }
-        else if(a[i]==' '&& inword==0){
-            word++;
+        else if(a[i]==' '){
+            inword=0;
         }
     }
     printf("%d",word);
