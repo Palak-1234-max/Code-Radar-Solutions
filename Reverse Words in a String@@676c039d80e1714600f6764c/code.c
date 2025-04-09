@@ -4,10 +4,11 @@ int main(){
     char a[50];
     int start,end;
     fgets(a, sizeof(a), stdin);
-    if(a[strlen(a)-1]=='\n'){
-        a[strlen(a)-1]='\0';
-    }
     int len=strlen(a);
+    if(a[len-1]=='\n'){
+        a[len-1]='\0';
+        len--;
+    }
     start=0;
     for(int i=0;i<=len;i++){
         if(a[i]==' ' || a[i]=='\0'){
