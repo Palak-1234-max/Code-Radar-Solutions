@@ -7,7 +7,6 @@ int main(){
     int len=strlen(a);
     if(a[len-1]=='\n'){
         a[len-1]='\0';
-        len--;
     }
     start=0;
     for(int i=0;i<=len;i++){
@@ -24,6 +23,6 @@ int main(){
             start=i+1;
         }
     }
-    printf("%s",a);
+    printf("%s\n",a);
     return 0;
 }
