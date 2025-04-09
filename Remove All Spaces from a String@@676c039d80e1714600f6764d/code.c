@@ -7,9 +7,10 @@ int main(){
         a[strlen(a)-1]='\0';
     }
     int i,j;
-    for(i=0,j=0;a[i]!='\0';i++,j++){
+    for(i=0,j=0;a[i]!='\0';i++){
         if(a[i]!=' '){
             a[j]=a[i];
+            j++;
         }
     }
     a[j]='\0';
