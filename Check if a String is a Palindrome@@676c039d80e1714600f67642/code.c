@@ -1,26 +1,27 @@
-// Your code here...
 #include <stdio.h>
-#include <string.h>
 int main(){
-    char a[50],b[50];
-    int i,j,flag=0;
-    fgets(a, sizeof(a), stdin);
-    j=0;
-    for(i=strlen(a)-1;i>=0;i--){
-        b[j]=a[i];
-        j++;
+char a[50], rev[50];
+fgets(a, sizeof(a), stdin);
+int i,count=0;
+for(i=0;a[i]!='\0';i++){
+    count++;
+}
+int j;
+for(j=0;a[j]!='\0';j++){
+    rev[j]=a[count-1-j];
+}
+rev[j]='\0';
+int flag=0;
+for(int k=0;a[k]!='\0';k++){
+    if(a[k]!=rev[k]){
+        flag=1;
     }
-    for(i=0;i<=strlen(a);i++){
-        if(a[i]!=b[i]){
-            flag=1;
-            break;
-        }
-    }
-    if(flag==0){
-        printf("Yes");
-    }
-    else{
-        printf("No");
-    }
+}
+if(flag==0){
+    printf("Yes");
+}
+else{
+    printf("No");
+}
     return 0;
 }
