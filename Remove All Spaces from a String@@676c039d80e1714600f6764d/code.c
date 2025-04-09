@@ -12,6 +12,7 @@ int main(){
             a[j]=a[i];
         }
     }
+    a[j]='\0';
     puts(a);
     return 0;
 }
