@@ -23,6 +23,6 @@ int main(){
             start=i+1;
         }
     }
-    puts(a);
+    printf("%s",a);
     return 0;
 }
