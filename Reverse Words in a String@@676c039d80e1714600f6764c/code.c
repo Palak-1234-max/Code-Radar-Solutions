@@ -21,7 +21,7 @@ int main(){
             }
             start=i+1;
         }
-        puts(a);
-        return 0;
     }
+    puts(a);
+    return 0;
 }
