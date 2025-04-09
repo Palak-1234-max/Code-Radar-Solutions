@@ -7,8 +7,9 @@ int main(){
     if(a[strlen(a)-1]=='\n'){
         a[strlen(a)-1]='\0';
     }
+    int len=strlen(a);
     start=0;
-    for(int i=0;a[i]!='\0';i++){
+    for(int i=0;i<=len;i++){
         if(a[i]==' ' || a[i]=='\n'){
             end=i-1;
             while(start<end){
