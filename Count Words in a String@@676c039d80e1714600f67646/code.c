@@ -7,7 +7,7 @@ int main(){
         if(a[i]!=' '){
             inword=1;
         }
-        else if(a[i]==' '&& inword==1){
+        else if(a[i]==' '&& inword==0){
             word++;
         }
     }
