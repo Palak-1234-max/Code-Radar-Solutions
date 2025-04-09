@@ -10,7 +10,7 @@ int main(){
     int len=strlen(a);
     start=0;
     for(int i=0;i<=len;i++){
-        if(a[i]==' ' || a[i]=='\n'){
+        if(a[i]==' ' || a[i]=='\0'){
             end=i-1;
             while(start<end){
                 char temp;
