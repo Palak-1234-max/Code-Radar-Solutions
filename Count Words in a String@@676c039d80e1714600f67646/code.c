@@ -7,10 +7,9 @@ int main(){
         if(a[i]!=' '){
             inword=1;
         }
-        else if(a[i]==' '&& inword==0){
+        else if(a[i]==' '&& inword==1){
             word++;
         }
-        inword=0;
     }
     printf("%d",word);
     return 0;
