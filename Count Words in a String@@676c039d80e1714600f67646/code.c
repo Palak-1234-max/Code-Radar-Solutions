@@ -10,6 +10,7 @@ int main(){
         else if(a[i]==' '&& inword==0){
             word++;
         }
+        inword=0;
     }
     printf("%d",word);
     return 0;
